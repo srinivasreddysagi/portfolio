@@ -1,7 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Merriweather+Sans:ital,wght@0,300;1,300&display=swap');
+
 *,
 ::before,
 ::after {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+}
+
+:root {
+   --prime-dark: #2C3E50;
+   --sec-dark: #E74C3C;
+   --text-lite: #ECF0F1;
+   --sec-even: #3498DB;
+   --sec-odd: #2980B9;
+}
+
+body {
+   font-family: 'League Spartan', sans-serif;
+   font-family: 'Merriweather Sans', sans-serif;
+   font-size: 16px;
+}
+
+.topbar {
+   background-color: var(--prime-dark);
+   height: 80px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+   font-size: 1.8rem;
+   font-weight: 700;
+   color: var(--text-lite);
+   margin-left: 10px;
+   letter-spacing: 2px;
+   display: flex;
+}
+
+.menu {
+   display: flex;
+   margin: 10px;
+}
+
+.menu ul {
+   list-style-type: none;
+   display: flex;
+}
+
+.button a {
+   background-color: var(--sec-dark);
+   color: var(--text-lite);
+   text-decoration: none;
+   font-weight: 600;
+   margin: 16px;
+   padding: 10px;
+   border-radius: 6px;
+}
+
+.button a:hover {
+   background-color: transparent;
+   border: 2px solid var(--sec-dark);
+   padding: 8px;
+}
+
+.profile {
+   background-color: var(--text-lite);
+   height: calc(100vh - 80px);
+   width: 100%;
+}
+
+.light {
+   background-color: var(--sec-even);
+   height: 50vh;
+   width: 100%;
+}
+
+.dark {
+   background-color: var(--sec-odd);
+   height: 50vh;
+   width: 100%;
+}
+
+.sec-content {
+   background-color: var(--text-lite);
+   height: 50vh;
+   width: 100%;
 }
