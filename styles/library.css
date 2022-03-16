@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Merriweather+Sans:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300;1,400&display=swap');
 
 *,
 ::before,
@@ -12,14 +12,17 @@
    --prime-dark: #2C3E50;
    --sec-dark: #E74C3C;
    --text-lite: #ECF0F1;
-   --sec-even: #3498DB;
-   --sec-odd: #2980B9;
+   --sec-even: #b3d89c;
+   --sec-odd: #d0efb1;
+   --clr-beta: #d6e0ea;
+}
+
+html {
+   font-size: 16px;
 }
 
 body {
-   font-family: 'League Spartan', sans-serif;
-   font-family: 'Merriweather Sans', sans-serif;
-   font-size: 16px;
+   font-family: 'Source Sans Pro', sans-serif;
 }
 
 .topbar {
@@ -67,25 +70,70 @@ body {
 }
 
 .profile {
-   background-color: var(--text-lite);
-   height: calc(100vh - 80px);
+   background-color: var(--clr-beta);
+   height: calc(75vh - 80px);
    width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.profile div {
+   background-color: var(--text-lite);
+   height: fit-content;
+   width: 40%;
+   border: 2px solid var(--sec-even);
+   border-radius: 10px;
+   padding: 40px;
+   margin: auto;
+   text-align: center;
+}
+
+.profile div:hover {
+   box-shadow: 2px 2px 8px 1px var(--sec-odd);
+}
+
+.profile div img {
+   border-radius: 50%;
+}
+
+.profile h1 {
+   margin: 20px auto 5px auto;
+   font-size: 30px;
+   font-weight: 900;
+}
+
+.sec {
+   height: 25vh;
+   width: 100%;
+   font-size: 30px;
+   font-weight: 800;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .light {
-   background-color: var(--sec-even);
-   height: 50vh;
-   width: 100%;
+   background-color: var(--sec-odd);
 }
 
 .dark {
-   background-color: var(--sec-odd);
-   height: 50vh;
-   width: 100%;
+   background-color: var(--sec-even);
 }
 
 .sec-content {
-   background-color: var(--text-lite);
-   height: 50vh;
+   background-color: var(--clr-beta);
+   height: 20vh;
    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.foot {
+   background-color: var(--prime-dark);
+   color: var(--text-lite);
+   height: 15vh;
+   width: 100%;
+   padding: 20px;
+   text-align: center;
 }
