@@ -7,187 +7,189 @@
 *,
 ::before,
 ::after {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-   --prime-dark: #2c3e50;
-   --sec-dark: #e74c3c;
-   --text-lite: #ecf0f1;
-   --sec-even: #b3d89c;
-   --sec-odd: #d0efb1;
-   --clr-beta: #d6e0ea;
+    --prime-dark: #2c3e50;
+    --sec-dark: #e74c3c;
+    --text-lite: #ecf0f1;
+    --sec-even: #b3d89c;
+    --sec-odd: #d0efb1;
+    --clr-beta: #d6e0ea;
+    --sec-e: #3498db;
+    --sec-o: #85c1e9;
 }
 
 html {
-   font-size: 16px;
+    font-size: 16px;
 }
 
 body {
-   font-family: "Source Sans Pro", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 /* Stylings for topbar or navigation bar */
 
 .topbar {
-   background-color: var(--prime-dark);
-   height: 80px;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+    background-color: var(--prime-dark);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-   font-size: 1.8rem;
-   font-weight: 700;
-   color: var(--text-lite);
-   margin-left: 10px;
-   letter-spacing: 2px;
-   display: flex;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-lite);
+    margin-left: 10px;
+    letter-spacing: 2px;
+    display: flex;
 }
 
 .menu {
-   display: flex;
-   margin: 10px;
+    display: flex;
+    margin: 10px;
 }
 
 .menu ul {
-   list-style-type: none;
-   display: flex;
+    list-style-type: none;
+    display: flex;
 }
 
 /* Styling buttons used in this page */
 
 .button a {
-   background-color: var(--sec-dark);
-   color: var(--text-lite);
-   text-decoration: none;
-   font-weight: 600;
-   margin: 16px;
-   padding: 10px;
-   border-radius: 6px;
+    background-color: var(--sec-dark);
+    color: var(--text-lite);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 16px;
+    padding: 10px;
+    border-radius: 6px;
 }
 
 .button a:hover {
-   background-color: transparent;
-   border: 2px solid var(--sec-dark);
-   padding: 8px;
+    background-color: transparent;
+    border: 2px solid var(--sec-dark);
+    padding: 8px;
 }
 
 .sec-button a {
-   background-color: var(--sec-dark);
-   color: var(--text-lite);
-   text-decoration: none;
-   font-size: 30px;
-   font-weight: 600;
-   margin: 16px;
-   padding: 12px;
-   border-radius: 6px;
+    background-color: var(--sec-dark);
+    color: var(--text-lite);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 16px;
+    padding: 12px;
+    border-radius: 6px;
 }
 
 .sec-button i {
-   padding-left: 10px;
+    padding-left: 10px;
 }
 
 .sec-button a:hover {
-   background-color: transparent;
-   border: 2px solid var(--sec-dark);
-   color: var(--prime-dark);
-   padding: 8px;
+    background-color: transparent;
+    border: 2px solid var(--sec-dark);
+    color: var(--prime-dark);
+    padding: 8px;
 }
 
 /* Stylings for Profile section */
 
 .profile {
-   background-color: var(--clr-beta);
-   height: calc(100vh - 80px);
-   width: 100%;
-   display: flex;
-   align-items: center;
+    background-color: var(--clr-beta);
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .profile div {
-   background-color: var(--text-lite);
-   height: fit-content;
-   width: 60%;
-   border: 2px solid var(--sec-even);
-   border-radius: 10px;
-   padding: 40px;
-   margin: auto;
-   text-align: center;
+    background-color: var(--text-lite);
+    height: fit-content;
+    width: 60%;
+    border: 2px solid var(--sec-even);
+    border-radius: 10px;
+    padding: 40px;
+    margin: auto;
+    text-align: center;
 }
 
 .profile div:hover {
-   box-shadow: 2px 2px 8px 1px var(--sec-odd);
+    box-shadow: 2px 2px 8px 1px var(--sec-odd);
 }
 
 .profile div img {
-   border-radius: 50%;
+    border-radius: 50%;
 }
 
 .profile h1 {
-   margin: 20px auto 5px auto;
-   font-size: 30px;
-   font-weight: 900;
+    margin: 20px auto 5px auto;
+    font-size: 30px;
+    font-weight: 900;
 }
 
 /* Common stylings for both light and dark sections */
 
 .sec {
-   height: 50vh;
-   width: 100%;
-   padding: 20px;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   flex-direction: column;
-   text-align: center;
+    height: 50vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .sec h2 {
-   font-size: 50px;
-   font-weight: 800;
+    font-size: 50px;
+    font-weight: 800;
 }
 
 .sec p {
-   font-size: 30px;
-   margin-left: 30px;
-   margin-right: 30px;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 /* Stylings applied only on lighter sections */
 
 .light {
-   background-color: var(--sec-odd);
+    background-color: var(--sec-odd);
 }
 
 /* Stylings applied only on darker sections */
 
 .dark {
-   background-color: var(--sec-even);
+    background-color: var(--sec-even);
 }
 
 /* Stylings applied only on content wrapping sections */
 
 .sec-content {
-   background-color: var(--clr-beta);
-   height: 20vh;
-   width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    background-color: var(--clr-beta);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Stylings applied on Footer */
 
 .foot {
-   background-color: var(--prime-dark);
-   color: var(--text-lite);
-   height: 15vh;
-   width: 100%;
-   padding: 20px;
-   text-align: center;
+    background-color: var(--prime-dark);
+    color: var(--text-lite);
+    height: 15vh;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
 }
