@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300;1,400&display=swap");
+
+*,
+::before,
+::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --prime-dark: #2c3e50;
+   --sec-dark: #e74c3c;
+   --text-lite: #ecf0f1;
+   --sec-even: #b3d89c;
+   --sec-odd: #d0efb1;
+   --clr-beta: #d6e0ea;
+   --clr-gamma: #f2f6ff;
+}
+
+html {
+   font-size: 16px;
+}
+
+body {
+   font-family: "Source Sans Pro", sans-serif;
+}
+
+.skills div p {
+   border: 1px solid var(--prime-dark);
+   padding: 14px;
+   display: inline;
+   border-radius: 6px;
+}
+
+.skills div i {
+   margin-left: 10px;
+}
+
+.contact {
+   background-color: var(--clr-gamma);
+   height: 90vh;
+   padding-top: 30px;
+}
+
+.foot {
+   height: 10vh;
+}
+
+.social-wrapper {
+   background-color: #f2f6ff;
+   padding: 24px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.social-icon {
+   width: 50px;
+   height: 50px;
+   padding-top: 16px 32px;
+   display: flex;
+}
+
+form {
+   background-color: white;
+   width: 30%;
+   margin: 50px auto;
+   text-align: center;
+   border: 1px solid #ccc;
+}
+
+.form-heading {
+   font-size: 32px;
+   padding-top: 56px;
+   padding-bottom: 32px;
+}
+
+.input-wrapper {
+   padding-top: 80px;
+   padding-bottom: 40px;
+   padding-left: 80px;
+   padding-right: 80px;
+}
+
+.input-box {
+   font-size: 18px;
+   padding-top: 18px;
+   padding-bottom: 12px;
+   margin-bottom: 36px;
+   border: 0;
+   border-bottom: 1px solid #ccc;
+   width: 100%;
+}
+
+.btn-submit {
+   background-color: var(--sec-dark);
+   padding: 12px 24px;
+   font-size: 18px;
+   color: white;
+   border-radius: 4px;
+   border: none;
+}
+
+.btn-submit:hover {
+   background-color: transparent;
+   border: 2px solid var(--sec-dark);
+   color: var(--prime-dark);
+   padding: 10px 24px;
+}
