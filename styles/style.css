@@ -41,6 +41,7 @@ a {
 section {
     margin-top: 4rem;
     margin-bottom: 4rem;
+    max-width: 100%;
 }
 
 .topbar {
@@ -170,6 +171,7 @@ h2 {
 }
 
 .projects__show {
+    max-width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: flex;
