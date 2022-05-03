@@ -61,12 +61,16 @@ section {
 }
 
 .topbar div ul li a {
+    background-color: var(--moderate-cyan);
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.4rem;
     color: #fff;
 }
 
 .topbar div ul li a:hover {
-    color: var(--very-dark-blue);
-    transition: 0.2s;
+    transition: 0.5s;
+    background-color: hsl(170, 45%, 40%);
+    box-shadow: 0px 1px 2px 2px hsl(170, 45%, 40%, 0.5);
 }
 
 h1,
