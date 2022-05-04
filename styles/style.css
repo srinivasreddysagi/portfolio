@@ -61,7 +61,7 @@ section {
 }
 
 .topbar div ul li a {
-    background-color: var(--moderate-cyan);
+    background-color: hsl(261, 67%, 70%);
     padding: 0.5rem 0.7rem;
     border-radius: 0.4rem;
     color: #fff;
@@ -69,8 +69,7 @@ section {
 
 .topbar div ul li a:hover {
     transition: 0.5s;
-    background-color: hsl(170, 45%, 40%);
-    box-shadow: 0px 1px 2px 2px hsl(170, 45%, 40%, 0.5);
+    background-color: hsl(261, 67%, 65%);
 }
 
 h1,
@@ -152,18 +151,36 @@ h2 {
 .skills__skill {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 95%;
     gap: 1rem;
     align-items: center;
     justify-content: center;
     opacity: 0.8;
 }
 
-.skill {
+/* .skill {
     display: flex;
     gap: 0.5rem;
     align-items: center;
     margin: 0.5rem;
+} */
+
+.skill {
+    font-size: 1rem;
+    height: 3rem;
+    width: 8rem;
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0.1rem;
+    padding: 1rem;
+    border: 2px solid var(--moderate-cyan);
+    border-top-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    box-shadow: 0px 2px 4px 4px hsl(170, 45%, 43%, 0.05);
 }
 
 .projects {
